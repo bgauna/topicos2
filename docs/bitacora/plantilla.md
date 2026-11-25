@@ -6,6 +6,7 @@
 - **Responsables:** Briant + Fernando
 - **Herramienta y modelo:** `<herramienta>`; `<modelo si se conoce>`
 - **Prompt precedente o relacionado:** `<identificador o no aplica>`
+- **Fecha de regularización documental:** `<fecha y motivo si se completa retrospectivamente>`
 
 ## Objetivo y fuentes de entrada
 
@@ -15,9 +16,15 @@
 
 `<Pegar el texto completo enviado>`
 
-## Respuesta completa del agente
+## Respuesta original del agente
 
-`<Pegar la respuesta original completa>`
+- **Fuente:** `<enlace o referencia del chat o registro que conserva la respuesta>`
+
+`<Pegar la respuesta original completa. Si no se recuperó, indicarlo explícitamente.>`
+
+## Resumen retrospectivo basado en evidencia (si aplica)
+
+`<Resumen separado y fuentes que lo respaldan>`
 
 ## Archivos afectados y trazabilidad
 
@@ -37,7 +44,7 @@
 
 ## Verificación humana
 
-`<Estado, revisores y evidencia, cuando consten>`
+`<Estado, revisores y evidencia, cuando consten. Identificar por separado la aprobación expresa de decisiones y la revisión de la ejecución.>`
 
 ## Limitaciones y bloqueos
 
@@ -50,4 +57,5 @@
 ## Estado final y commit
 
 - **Estado final:** `<resultado y pendientes>`
-- **Commit asociado:** `<hash comprobado o sin commit>`
+- **Commit de ejecución:** `<hash comprobado, sin commit o sin evidencia>`
+- **Commit de incorporación o consolidación y PR:** `<hash y enlace solo cuando consten>`
