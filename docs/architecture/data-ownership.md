@@ -1,6 +1,6 @@
 # Propiedad de datos
 
-**Estado:** propuesta P-002. DF-011 y AMB-005 fijan la separación y la propiedad. Los nombres de bases y la representación descrita se someten a revisión. Véanse [límites](service-boundaries.md) y [ADR-004](adr/ADR-004.md).
+**Estado:** arquitectura de referencia con los doce ADR aceptados por Briant + Fernando en P-003. DF-011 y AMB-005 fijan la separación y la propiedad. Los nombres de bases y la representación descrita se someten a revisión. Véanse [límites](service-boundaries.md) y [ADR-004](adr/ADR-004.md).
 
 **Convención.** Inmediata significa que decide el dato confirmado por el propietario o una validación transaccional local. Eventual significa que la copia puede retrasarse dentro de su contrato. Las copias de lectura jamás habilitan o confirman una venta.
 

@@ -1,0 +1,15 @@
+root = true
+
+# Formato básico. LF y dos espacios son convenciones propuestas para revisión.
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{js,mjs,cjs,vue,json,yaml,yml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

@@ -1,0 +1,24 @@
+schema: spec-driven
+skillsScope: project
+
+context: |
+  Ticketera virtual para el Trabajo Final de Tópicos II — 2026. Responsables: Briant + Fernando.
+  Arquitectura de microservicios con Node.js, Express y JavaScript vanilla ES6+ (ESM). Web con Vue 3 y Vite. PostgreSQL con Sequelize, NATS con JetStream y Redis desde la Etapa II.
+  Stack complementario: Docker y Docker Compose, JWT y bcrypt, Zod, OpenAPI y Swagger UI, Pino, SSE desde III, Vitest, Supertest, Testcontainers, k6 en III, npm Workspaces, Git y GitHub, GitHub Actions, ESLint y Prettier.
+  Un change por etapa: I Core, II Recomendaciones y caché, III Escalabilidad. Revisión humana en orden proposal, specs, design y tasks. Implementar tras aprobar especificaciones y diseño. Verificar antes del archivado autorizado.
+  Consultar AGENTS.md, CONTRIBUTE.md, docs/requirements.md, los ADR aceptados en docs/architecture/adr/README.md y los controles OBS en docs/architecture/review-controls.md.
+  Redactar en español y conservar las palabras clave que exige el formato de OpenSpec. Las decisiones diferidas y cambios de alcance requieren el tratamiento definido en AGENTS.md.
+
+rules:
+  proposal:
+    - "Identificar la etapa, el objetivo, el alcance y las exclusiones. Limitar el incremento a la etapa autorizada."
+    - "Referenciar los requisitos que motivan el incremento e identificar las capacidades nuevas o modificadas."
+  specs:
+    - "Definir comportamientos observables con escenarios verificables. Conservar los encabezados y palabras clave que exige spec-driven."
+    - "Trazar los requisitos, reglas y escenarios con RF, RNF, RN y CA aplicables, preservando los identificadores de docs/requirements.md."
+  design:
+    - "Respetar los ADR aceptados, identificar la propiedad de los datos y justificar los mecanismos técnicos, transaccionales y de recuperación de fallos."
+    - "Tratar los controles OBS de la etapa e indicar la evidencia necesaria. Señalar las decisiones que requieren aprobación y preservar las definiciones diferidas de etapas futuras."
+  tasks:
+    - "Dividir el trabajo autorizado en grupos de tareas acotadas y ordenadas por dependencias."
+    - "Incluir pruebas y verificaciones observables en las tareas, con referencias a requisitos y criterios de aceptación aplicables."

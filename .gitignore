@@ -1,0 +1,40 @@
+# Dependencias y artefactos generados
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.vite/
+.tmp/
+tmp/
+temp/
+*.tmp
+*.log
+logs/
+
+# Variables de entorno y secretos locales
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+/secrets/
+
+# Datos locales de infraestructura y pruebas de carga
+/infra/.local/
+/infra/data/
+/infra/volumes/
+/tests/load/results/
+/tests/load/.results/
+
+# Configuración personal de editores y archivos del sistema
+.idea/
+.vscode/
+*.suo
+*.user
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini

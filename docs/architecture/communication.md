@@ -1,6 +1,6 @@
 # Comunicación entre componentes
 
-**Estado:** propuesta P-002. AMB-005, AMB-011 y AMB-012 son restricciones aprobadas. Véanse [límites](service-boundaries.md), [consistencia](consistency.md) y [ADR-005](adr/ADR-005.md).
+**Estado:** arquitectura de referencia con los doce ADR aceptados por Briant + Fernando en P-003. AMB-005, AMB-011 y AMB-012 son restricciones aprobadas. Véanse [límites](service-boundaries.md), [consistencia](consistency.md) y [ADR-005](adr/ADR-005.md).
 
 ## HTTP y decisiones inmediatas
 

@@ -15,9 +15,10 @@ Todo ADR lleva exclusivamente `Autores: Briant + Fernando`. El agente carece de 
 | Propiedad y contratos | [Datos](docs/architecture/data-ownership.md), [comunicación](docs/architecture/communication.md) y [consistencia](docs/architecture/consistency.md) | Autoridad sobre los datos, integración y garantías transaccionales. |
 | Decisiones aceptadas | [Índice de ADR](docs/architecture/adr/README.md) | Decisiones aprobadas. Sus detalles diferidos se concretan en los diseños. |
 | Auditoría pendiente | [Controles de revisión](docs/architecture/review-controls.md) | OBS y evidencia esperada para cada etapa. |
-| Historial de ingeniería | [Bitácora de desarrollo](docs/bitacora/) | Entradas históricas, resultados y revisión humana conforme a EA-006. |
-| Especificaciones y tareas del incremento | OpenSpec, artefacto futuro: `openspec/` | Cuando exista, el change activo delimita artefactos y tareas aprobadas. |
-| Ramas, validaciones y CI | Artefacto futuro: `CONTRIBUTE.md` | Aplicar su flujo una vez creado y aprobado. |
+| Historial de ingeniería | [Índice de bitácora](docs/bitacora/indice.md) y [plantilla](docs/bitacora/plantilla.md) | Entradas, resultados y revisión humana conforme a EA-006. |
+| Especificaciones y tareas del incremento | [Configuración de OpenSpec](openspec/config.yaml) | OpenSpec 2.2.0 inicializado. El change activo, cuando se autorice y exista, delimita artefactos y tareas aprobadas. |
+| Ramas, validaciones y CI | [CONTRIBUTE.md](CONTRIBUTE.md#convenciones-de-desarrollo-aprobadas) | Flujo de contribución y convenciones DEV aprobadas en P-005. |
+| Estado y preparación | [README](README.md), [entorno](docs/preparation/environment.md) y [cierre de Fase 0](docs/preparation/closure.md) | Versión de Node.js, prerrequisitos comprobados y pendientes. |
 | Alcance de esta ejecución | Prompt actual | Autoriza la tarea concreta y sus entregables. |
 
 - Consulta el prompt junto con los requisitos, los ADR aceptados y el change pertinente. Las especificaciones respetan estas decisiones vigentes.
@@ -27,7 +28,7 @@ Todo ADR lleva exclusivamente `Autores: Briant + Fernando`. El agente carece de 
 
 ## Stack y convenciones
 
-- Usa JavaScript vanilla ES6+, Node.js y Express en backend, y Vue 3 con Vite y JavaScript en frontend.
+- Usa JavaScript vanilla ES6+, Node.js y Express en backend, y Vue 3 con Vite y JavaScript en frontend. Verifica la versión de Node.js fijada en [.nvmrc](.nvmrc) según el [README](README.md#preparar-el-entorno).
 - Usa PostgreSQL con Sequelize, NATS con JetStream y Redis según su etapa. El entorno local usa Docker y Docker Compose.
 - Usa JWT, bcrypt, Zod, OpenAPI, Swagger UI, Pino y Server-Sent Events (SSE) según los contratos aceptados.
 - Usa Vitest, Supertest y Testcontainers para las verificaciones correspondientes, y k6 para estrés en la Etapa III.
@@ -41,7 +42,7 @@ Todo ADR lleva exclusivamente `Autores: Briant + Fernando`. El agente carece de 
 2. **Etapa II — Recomendaciones y caché.** Preferencias, historial proyectado, recomendaciones, Redis y vistas del incremento.
 3. **Etapa III — Escalabilidad.** Colas y turnos por evento, SSE, devoluciones, búsqueda avanzada y estrés.
 
-Cada etapa corresponde a un único change. Sigue `proposal → specs → design → tasks → implement → archive`, con verificación antes de archivar.
+Cada etapa corresponde a un único change. Consulta el flujo y las [skills y comandos comprobados con OpenSpec 2.2.0](CONTRIBUTE.md#preparar-un-entorno-con-openspec-220) en `CONTRIBUTE.md`.
 
 - Consulta el change activo antes de modificar código. Inicia implementación únicamente con especificaciones y diseño aprobados.
 - Implementa solo tareas autorizadas del incremento. Cualquier change adicional o adelanto de etapa requiere autorización expresa.
@@ -121,14 +122,14 @@ Cada etapa corresponde a un único change. Sigue `proposal → specs → design 
 - Los mocks sirven para comportamientos aislados. Las garantías de exclusividad transaccional requieren evidencia contra el motor real.
 - Valida contratos OpenAPI, ESLint y Prettier. En III ejecuta k6 con perfil y umbrales aprobados antes de medir.
 - Agrega una prueba de regresión para cada corrección relevante cuando corresponda. Conserva las pruebas y la fuerza de sus aserciones.
-- Consulta la configuración y `CONTRIBUTE.md` cuando existan. Comprueba que los scripts y suites estén disponibles antes de ejecutarlos.
+- Consulta [CONTRIBUTE.md](CONTRIBUTE.md) y la configuración de las suites cuando se incorporen. Comprueba que los scripts y suites estén disponibles antes de ejecutarlos.
 - Informa comandos, resultados reales y verificaciones omitidas o bloqueadas. Usa [ADR-011](docs/architecture/adr/ADR-011.md) como guía.
 
 ## Git, alcance y bitácora de desarrollo
 
 - Inspecciona Git antes de editar e informa cambios preexistentes relevantes. Preserva cambios ajenos y limita los tuyos al alcance autorizado.
 - Evita refactorizaciones sin relación y operaciones destructivas. Commit, push, merge y cambios de rama requieren autorización correspondiente.
-- Aplica el flujo de contribución aprobado cuando exista `CONTRIBUTE.md`.
+- Aplica las [convenciones DEV aprobadas](CONTRIBUTE.md#convenciones-de-desarrollo-aprobadas) y respeta las autorizaciones de Git de esta guía.
 - Registra cada interacción relevante conforme a EA-006 cuando la bitácora esté dentro del alcance autorizado. Conserva entradas y correcciones anteriores.
 - Cada entrada incluye identificador, fecha, fase, etapa, objetivo, prompt completo, respuesta, artefactos, decisiones, observaciones, verificación humana, pruebas y resultados cuando correspondan, correcciones, prompts relacionados y commit cuando exista.
 - Registra solo resultados y aprobaciones con evidencia. Las entradas históricas conservan sus resultados originales.

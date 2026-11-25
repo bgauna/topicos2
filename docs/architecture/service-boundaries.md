@@ -1,6 +1,6 @@
 # Límites de servicios
 
-**Estado:** propuesta P-002 para revisión de Briant + Fernando. **Responsabilidades aprobadas de referencia:** [requisitos](../requirements.md). Véanse [propiedad de datos](data-ownership.md), [comunicación](communication.md) y [ADR-001](adr/ADR-001.md). Las interfaces descritas son conceptuales.
+**Estado:** arquitectura de referencia con los doce ADR aceptados por Briant + Fernando en P-003. **Responsabilidades aprobadas de referencia:** [requisitos](../requirements.md). Véanse [propiedad de datos](data-ownership.md), [comunicación](communication.md) y [ADR-001](adr/ADR-001.md). Las interfaces descritas son conceptuales.
 
 | Componente y etapa | Capacidades y operaciones principales | Datos y dependencias | API conceptual | Eventos | Requisitos y exclusiones |
 | --- | --- | --- | --- | --- | --- |
