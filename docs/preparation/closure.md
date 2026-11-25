@@ -16,9 +16,10 @@ Este cierre pertenece a Fase 0. OpenSpec conserva cero changes activos y archiva
 | P-002 · Arquitectura | [Panorama](../architecture/overview.md), [diagramas](../architecture/diagrams.md) y [ADR](../architecture/adr/README.md) | Arquitectura disponible | Los 12 ADR se aceptaron posteriormente en P-003. | La [entrada](../bitacora/P-002.md) conserva campos pendientes. |
 | P-003 · Formalización | [ADR](../architecture/adr/README.md), [controles OBS](../architecture/review-controls.md) y [AGENTS.md](../../AGENTS.md) | Aceptación de ADR documentada | Cada ADR identifica a sus responsables y P-003 como referencia de aceptación. | La revisión de la ejecución sigue incompleta en la [entrada](../bitacora/P-003.md). Los OBS permanecen pendientes. |
 | P-004 · OpenSpec y contribución | [Configuración](../../openspec/config.yaml) y [guía de contribución](../../CONTRIBUTE.md) | Configuración comprobada | OpenSpec 2.2.0 reconoce la raíz local y el esquema `spec-driven`. | La [entrada](../bitacora/P-004.md) conserva campos pendientes. |
-| P-004.1 · Continuación | [Configuración](../../openspec/config.yaml) y [skills de Codex](../../.agents/skills/) | Configuración manual informada y resultado comprobable | Marcador `codex`, alcance de proyecto, 11 skills y perfil `custom`. | Sin entrada propia en la bitácora. La verificación posterior cubre los archivos y el CLI actual. |
+| P-004.1 · Continuación | [Configuración](../../openspec/config.yaml), [skills de Codex](../../.agents/skills/) y [sección en P-004](../bitacora/P-004.md#prompt-p-0041) | Configuración manual informada y resultado comprobable | Marcador `codex`, alcance de proyecto, 11 skills y perfil `custom`. | El prompt está en P-004.md. P-006 incorporó la única respuesta consolidada recuperada. |
 | P-005 · Cierre | [README](../../README.md), [convenciones DEV](../../CONTRIBUTE.md#convenciones-de-desarrollo-aprobadas), [índice](../bitacora/indice.md), [plantilla](../bitacora/plantilla.md), [entorno](environment.md) y este informe | Cierre documental disponible para revisión final | DEV aprobadas, referencias preparatorias y verificación de entorno documentadas. | En P-005 la preparación operativa quedó parcial porque el PATH seleccionaba Node.js 22.14.0. La [entrada de P-005](../bitacora/P-005.md) conserva su estado original. |
 | P-005.1 · Confirmación del entorno | [Entorno](environment.md#p-0051--estado-vigente) y [bitácora](../bitacora/P-005.1.md) | Preparación operativa básica completada | Resultados manuales confirmados y siete comprobaciones de Codex con código 0. | El bloqueo de Node.js quedó resuelto. Siguen pendientes las pruebas de ejecución de contenedores y de aplicación. |
+| P-006 · Regularización de bitácoras | [Índice](../bitacora/indice.md), [plantilla](../bitacora/plantilla.md) y [registro](../bitacora/P-006.md) | Regularización disponible para revisión humana | Se recuperaron seis respuestas finales numeradas, se cotejó P-005.1 y se preservaron dos intercambios de apoyo. | EA-006 queda parcialmente acreditado. Faltan evidencias históricas de revisión y otros campos de ejecución. |
 
 ## Inventario comprobado
 
@@ -34,11 +35,17 @@ Este cierre pertenece a Fase 0. OpenSpec conserva cero changes activos y archiva
 | Controles OBS | 12 pendientes de diseño y verificación: 6 en I, 2 en II y 4 en III | [Seguimiento](../architecture/review-controls.md#matriz-de-seguimiento) |
 | Convenciones DEV | 10 aprobadas por Briant + Fernando en P-005 | [Registro](../../CONTRIBUTE.md#convenciones-de-desarrollo-aprobadas) |
 | Guías del repositorio | README, AGENTS.md y CONTRIBUTE.md presentes | [README](../../README.md), [AGENTS.md](../../AGENTS.md), [CONTRIBUTE.md](../../CONTRIBUTE.md) |
-| Bitácora | Seis entradas preparatorias previas, más el registro de P-005.1. Se conservan el índice y la plantilla de P-005. | [Índice](../bitacora/indice.md), [P-005.1](../bitacora/P-005.1.md) |
+| Bitácora | Ocho archivos de entrada, nueve interacciones numeradas y dos de apoyo. P-004 y P-004.1 comparten archivo. El índice incorpora P-005.1 y P-006. | [Índice](../bitacora/indice.md) |
 | OpenSpec | 2.2.0, 11 skills, esquema válido y cero changes activos, archivados o specs | [Verificación](environment.md) |
 | Entorno | Node.js del proyecto y disponibilidad básica de Docker confirmados en P-005.1 | [Verificación](environment.md) |
 
 Se contrastaron identificadores y estados con los archivos, se verificaron los enlaces locales y se comparó el estado de Git inicial y final. Los requisitos, PDF, ADR, OBS, configuración y skills de OpenSpec y las entradas históricas conservaron sus contenidos. La comprobación de OpenSpec con cero elementos verifica el estado inicial y el esquema. Los futuros artefactos de I-001 deberán validarse cuando existan.
+
+## Regularización de bitácoras · P-006
+
+Se recuperaron las respuestas finales de P-001, P-001.1, P-002, P-003 y P-005, y el informe consolidado de P-004 y P-004.1. P-005.1 ya tenía respuesta original y se cotejó con el chat del proyecto. Los resúmenes retrospectivos están identificados por separado. Sigue sin recuperarse una respuesta independiente de P-004 ni evidencia de una ejecución separada. Permanecen pendientes las revisiones humanas históricas que no constan, el modelo exacto y otros datos operativos históricos sin respaldo. La revisión final de la regularización corresponde a Briant + Fernando.
+
+Git registra la consolidación de la Fase 0 en el commit [7cfebcc](https://github.com/bgauna/topicos2/commit/7cfebcc2cb8a461037899038a7e8314abb850d6b) mediante el [PR #1](https://github.com/bgauna/topicos2/pull/1). El índice y las entradas distinguen los commits de incorporación y la fecha de la ejecución cuando se pudo recuperar. Se conservan los resultados operativos de P-005 y P-005.1.
 
 ## Siguiente actividad prevista
 
