@@ -1,6 +1,6 @@
 # Consistencia e integridad
 
-**Estado:** propuesta P-002. **Propietario crítico:** Ticketing en PostgreSQL. **Referencias:** [requisitos](../requirements.md), [ADR-007](adr/ADR-007.md), [ADR-008](adr/ADR-008.md), [ADR-009](adr/ADR-009.md) y [secuencias](diagrams.md). Las restricciones de negocio de RF, RN y AMB se mantienen. Los mecanismos y el protocolo entre servicios se proponen para revisión.
+**Estado:** arquitectura de referencia con los doce ADR aceptados por Briant + Fernando en P-003. **Propietario crítico:** Ticketing en PostgreSQL. **Referencias:** [requisitos](../requirements.md), [ADR-007](adr/ADR-007.md), [ADR-008](adr/ADR-008.md), [ADR-009](adr/ADR-009.md) y [secuencias](diagrams.md). Las restricciones de negocio de RF, RN y AMB se mantienen. Los detalles de mecanismos y del protocolo entre servicios se concretarán en el diseño correspondiente.
 
 ## Invariantes
 

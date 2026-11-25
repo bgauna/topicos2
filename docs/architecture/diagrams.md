@@ -1,6 +1,6 @@
 # Diagramas de arquitectura
 
-Propuesta P-002 para revisión. Las etapas indican incorporación prevista. Para responsabilidades y mecanismos véanse [límites](service-boundaries.md), [consistencia](consistency.md) y el [índice de ADR](adr/README.md).
+Arquitectura de referencia con los doce ADR aceptados por Briant + Fernando en P-003. Las etapas indican incorporación prevista. Para responsabilidades y mecanismos véanse [límites](service-boundaries.md), [consistencia](consistency.md) y el [índice de ADR](adr/README.md).
 
 ## 1. Contexto del sistema
 
